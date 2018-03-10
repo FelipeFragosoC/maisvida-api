@@ -45,11 +45,11 @@ public class Medico implements Serializable {
 
     @NotNull(message = "O campo 'ativo' é requerido.")
     @Column
-    private Integer ativo;
+    private Boolean ativo;
 
     @NotNull(message = "O campo 'status' é requerido.")
     @Column
-    private Integer status;
+    private Boolean status;
 
     public interface Existing {
     }
@@ -105,19 +105,19 @@ public class Medico implements Serializable {
         this.email = email;
     }
 
-    public Integer getAtivo() {
+    public Boolean getAtivo() {
         return ativo;
     }
 
-    public void setAtivo(Integer ativo) {
+    public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
     }
 
-    public Integer getStatus() {
+    public Boolean getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(Boolean status) {
         this.status = status;
     }
 
